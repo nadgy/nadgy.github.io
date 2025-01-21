@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   version="1.1"
+   id="Layer_1"
+   x="0px"
+   y="0px"
+   width="85px"
+   height="85px"
+   viewBox="0 0 80 80"
+   enable-background="new 0 0 80 80"
+   xml:space="preserve"
+   sodipodi:docname="logo.svg"
+   inkscape:version="1.4 (1:1.4+202410161351+e7c3feb100)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"><defs
+   id="defs2" /><sodipodi:namedview
+   id="namedview2"
+   pagecolor="#ffffff"
+   bordercolor="#000000"
+   borderopacity="0.25"
+   inkscape:showpageshadow="2"
+   inkscape:pageopacity="0.0"
+   inkscape:pagecheckerboard="0"
+   inkscape:deskcolor="#d1d1d1"
+   inkscape:zoom="5.0235294"
+   inkscape:cx="42.599532"
+   inkscape:cy="42.5"
+   inkscape:window-width="1296"
+   inkscape:window-height="697"
+   inkscape:window-x="0"
+   inkscape:window-y="0"
+   inkscape:window-maximized="1"
+   inkscape:current-layer="Layer_1" />
+	<path
+   sodipodi:type="spiral"
+   style="fill:none;fill-rule:evenodd;stroke:#8cc9f0;stroke-width:1.55124;stroke-opacity:1"
+   id="path3"
+   sodipodi:cx="741"
+   sodipodi:cy="393.5"
+   sodipodi:expansion="1"
+   sodipodi:revolution="3"
+   sodipodi:radius="40.9939"
+   sodipodi:argument="-19.896667"
+   sodipodi:t0="0"
+   d="m 741,393.5 c 1.02784,-1.77991 2.90639,0.50736 2.95833,1.70833 0.14078,3.25457 -3.66164,4.80233 -6.375,4.20834 -4.85355,-1.06252 -6.88629,-6.65314 -5.45833,-11.04167 2.09559,-6.44034 9.68006,-9.01777 15.70833,-6.70833 8.03474,3.07811 11.16863,12.71888 7.95834,20.375 -4.03983,9.63444 -15.76322,13.32934 -25.04167,9.20833 -11.23745,-4.99109 -15.49573,-18.81062 -10.45833,-29.70834 5.9364,-12.84258 21.85992,-17.66566 34.375,-11.70832 14.44915,6.87798 19.83799,24.9105 12.95833,39.04166 -7.81711,16.05672 -27.96199,22.01197 -43.70834,14.20833 -17.66502,-8.7545 -24.18715,-31.01412 -15.45832,-48.375 C 718.14899,355.43446 742.52508,348.34509 761.5,358"
+   transform="matrix(0.68047672,0,0,0.54096696,-461.9204,-171.03112)" />
+	
+<text
+   xml:space="preserve"
+   style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:19.085px;font-family:FreeMono;-inkscape-font-specification:'FreeMono, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#eed7f4;fill-opacity:1;fill-rule:evenodd;stroke:#8cc9f0;stroke-width:1.50588;stroke-opacity:1"
+   x="49.291981"
+   y="36.519077"
+   id="text2"
+   transform="scale(0.80076077,1.2488124)"><tspan
+     sodipodi:role="line"
+     id="tspan2"
+     x="49.291981"
+     y="36.519077"
+     style="stroke-width:1.50588">NadGy</tspan><tspan
+     sodipodi:role="line"
+     id="tspan3"
+     x="49.291981"
+     y="60.375328"
+     style="stroke-width:1.50588"></tspan></text></svg>

@@ -1,0 +1,80 @@
+/* Style spécifique pour une image particulière */
+.custom-style {
+    border-radius: 50% 20% / 10% 40%;
+    margin-right: 20px;
+    width: auto; /* Ajustez la taille selon vos besoins */
+    height: auto;
+  }
+  
+  /* Style général pour toutes les autres images */
+  img {
+    border-radius: 5px; /* Par exemple, un léger arrondi pour les autres images */
+    width: auto;
+    height: auto;
+  }
+
+  .image1 {
+		position: relative;
+	}
+
+	/* Hide hover image by default */
+	.hover-img {
+		opacity: 0;
+	}
+
+	/* Show hover image when hovering over the container */
+	.image1:hover .hover-img {
+		opacity: 1;
+	}
+
+  .image1 {
+		border-radius: 8px;
+		border: 0;
+		display: inline-block;
+		position: relative;
+	}
+
+		.image1 img {
+			border-radius: 8px;
+			display: block;
+		}
+
+		.image1.left, .image1.right {
+			max-width: 40%;
+		}
+
+			.image1.left img, .image1.right img {
+				width: 100%;
+			}
+
+		.image1.left {
+			float: left;
+			margin: 0 1.5em 1em 0;
+			top: 0.25em;
+		}
+
+		.image1.right {
+			float: right;
+			margin: 0 0 1em 1.5em;
+			top: 0.25em;
+		}
+
+		.image1.fit {
+			display: block;
+			margin: 0 0 2em 0;
+			width: 100%;
+		}
+
+			.image1.fit img {
+				width: 100%;
+			}
+
+		.image1.main {
+			display: block;
+			margin: 0 0 3em 0;
+			width: 100%;
+		}
+
+			.image1.main img {
+				width: 100%;
+			}
