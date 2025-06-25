@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutoriel GIS : Statistiques Zonales</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        header {
+            background: #28a745;
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+        }
+        main {
+            padding: 2rem;
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2 {
+            color: #28a745;
+        }
+        ul {
+            margin: 1rem 0;
+            padding-left: 1.5rem;
+        }
+        a {
+            color: #28a745;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        footer {
+            text-align: center;
+            margin: 2rem 0 0;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Tutoriel GIS : Calcul des Statistiques Zonales</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Objectif</h2>
+            <p>Ce tutoriel explique comment calculer les statistiques zonales dans QGIS. Les statistiques zonales permettent d'obtenir des données agrégées (comme la moyenne, la somme, ou le maximum) d'un raster en fonction des zones définies dans un shapefile.</p>
+        </section>
+        <section>
+            <h2>1. Pré-requis</h2>
+            <ul>
+                <li><strong>Logiciels installés</strong> : QGIS.</li>
+                <li><strong>Fichiers nécessaires</strong> :
+                    <ul>
+                        <li>Un raster contenant les données à analyser (par exemple, un GeoTIFF).</li>
+                        <li>Un shapefile définissant les zones d’analyse.</li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+        <section>
+            <h2>2. Charger les données dans QGIS</h2>
+            <ol>
+                <li>Ouvrez QGIS.</li>
+                <li>Ajoutez votre raster : Cliquez sur « Ajouter une couche raster », puis sélectionnez votre fichier raster (GeoTIFF).</li>
+                <li>Ajoutez votre shapefile : Cliquez sur « Ajouter une couche vecteur », puis sélectionnez votre fichier shapefile (<code>.shp</code>).</li>
+            </ol>
+        </section>
+        <section>
+            <h2>3. Calcul des statistiques zonales</h2>
+            <ol>
+                <li>Dans la barre de menus, cliquez sur « Traitement > Boîte à outils ».</li>
+                <li>Dans la boîte à outils de traitement, recherchez « Statistiques zonales ».</li>
+                <li>Double-cliquez sur l'outil « Statistiques zonales » pour l’ouvrir.</li>
+                <li>Configurez les paramètres :
+                    <ul>
+                        <li><strong>Raster d’entrée</strong> : Sélectionnez votre couche raster.</li>
+                        <li><strong>Zones vecteur</strong> : Sélectionnez votre shapefile.</li>
+                        <li><strong>Champ pour les résultats</strong> : Choisissez un champ dans lequel les résultats seront enregistrés (ou laissez QGIS en créer un automatiquement).</li>
+                        <li><strong>Statistiques à calculer</strong> : Cochez les statistiques que vous souhaitez (par exemple, Moyenne, Somme, Minimum, Maximum).</li>
+                    </ul>
+                </li>
+                <li>Choisissez un emplacement pour enregistrer la sortie si nécessaire, puis cliquez sur « Exécuter ».</li>
+            </ol>
+        </section>
+        <section>
+            <h2>4. Vérifier les résultats</h2>
+            <ol>
+                <li>Ouvrez la table attributaire de votre shapefile (clic droit sur la couche, puis « Ouvrir la table attributaire »).</li>
+                <li>Vous verrez les nouvelles colonnes ajoutées contenant les statistiques calculées pour chaque zone.</li>
+            </ol>
+        </section>
+        <section>
+            <h2>5. Exporter les résultats</h2>
+            <ol>
+                <li>Pour sauvegarder le shapefile avec les statistiques :
+                    <ul>
+                        <li>Faites un clic droit sur la couche, puis cliquez sur « Exporter > Enregistrer les entités sous ».</li>
+                        <li>Choisissez un format (par exemple, ESRI Shapefile), un emplacement, et enregistrez.</li>
+                    </ul>
+                </li>
+            </ol>
+        </section>
+        <section>
+            <h2>Conclusion</h2>
+            <p>Vous avez appris à calculer les statistiques zonales dans QGIS. Ces statistiques sont utiles pour analyser des données raster en fonction de zones géographiques spécifiques, comme des régions, des parcelles ou des bassins versants.</p>
+        </section>
+        <section>
+            <h2>Matériel à fournir aux étudiants</h2>
+            <ul>
+                <li>Le fichier raster.</li>
+                <li>Le shapefile.</li>
+                <li>Une version PDF de ce tutoriel.</li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>Tutoriel créé pour le cours de SIG.</p>
+    </footer>
+</body>
+</html>
+

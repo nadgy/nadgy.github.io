@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutoriel GIS : Traitement d'un fichier GeoTIFF</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        header {
+            background: #007acc;
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+        }
+        main {
+            padding: 2rem;
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2 {
+            color: #007acc;
+        }
+        ul {
+            margin: 1rem 0;
+            padding-left: 1.5rem;
+        }
+        a {
+            color: #007acc;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        footer {
+            text-align: center;
+            margin: 2rem 0 0;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Tutoriel GIS : Traitement d'un fichier GeoTIFF avec shapefile</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Objectif</h2>
+            <p>Apprendre à télécharger, traiter et utiliser un fichier GeoTIFF à partir de USGS, puis le découper à l’aide d’un shapefile. Vous utiliserez des outils SIG comme QGIS.</p>
+        </section>
+        <section>
+            <h2>1. Pré-requis</h2>
+            <ul>
+                <li><strong>Logiciels installés</strong> : QGIS (gratuit et open-source).</li>
+                <li><strong>Fichiers nécessaires</strong> :
+                    <ul>
+                        <li>Un fichier GeoTIFF téléchargé depuis USGS.</li>
+                        <li>Votre shapefile (SHP) contenant la zone d’intérêt.</li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+        <section>
+            <h2>2. Téléchargement d’un fichier GeoTIFF depuis USGS</h2>
+            <ol>
+                <li>Rendez-vous sur le site de <a href="https://earthexplorer.usgs.gov/" target="_blank">USGS</a>.</li>
+                <li>Connectez-vous avec vos identifiants.</li>
+                <li>Accédez à la section « Téléchargement de données » et sélectionnez les données raster (GeoTIFF).</li>
+                <li>Téléchargez le fichier GeoTIFF et enregistrez-le sur votre ordinateur.</li>
+            </ol>
+        </section>
+        <section>
+            <h2>3. Charger le fichier GeoTIFF dans QGIS</h2>
+            <ol>
+                <li>Ouvrez QGIS.</li>
+                <li>Dans la barre d’outils, cliquez sur « Ajouter une couche raster ».</li>
+                <li>Sélectionnez le fichier GeoTIFF que vous avez téléchargé.</li>
+                <li>Visualisez le raster sur votre carte. Vous devriez voir votre image GeoTIFF chargée dans la fenêtre principale.</li>
+            </ol>
+        </section>
+        <section>
+            <h2>4. Charger le shapefile dans QGIS</h2>
+            <ol>
+                <li>Cliquez sur « Ajouter une couche vecteur ».</li>
+                <li>Sélectionnez votre shapefile (fichier <code>.shp</code>).</li>
+                <li>Une fois chargé, le shapefile apparaîtra comme une couche superposée sur le raster.</li>
+            </ol>
+        </section>
+        <section>
+            <h2>5. Découper le GeoTIFF avec le shapefile</h2>
+            <ol>
+                <li>Dans la barre de menus, allez dans « Traitement > Boîte à outils ».</li>
+                <li>Cherchez « Extraction par masque » dans la boîte à outils (ou tapez « clip raster by mask layer » dans la recherche).</li>
+                <li>Configurez les paramètres :
+                    <ul>
+                        <li><strong>Raster à découper</strong> : Sélectionnez votre couche GeoTIFF.</li>
+                        <li><strong>Masque de découpe</strong> : Choisissez votre shapefile.</li>
+                        <li>Assurez-vous que l’option « Aligner avec le masque » est activée.</li>
+                    </ul>
+                </li>
+                <li>Choisissez un emplacement pour enregistrer le fichier découpé, puis cliquez sur « Exécuter ».</li>
+            </ol>
+        </section>
+        <section>
+            <h2>6. Vérifier et sauvegarder le fichier découpé</h2>
+            <ol>
+                <li>Une nouvelle couche raster découpée apparaîtra dans QGIS.</li>
+                <li>Vous pouvez sauvegarder le résultat :
+                    <ul>
+                        <li>Faites un clic droit sur la couche découpée.</li>
+                        <li>Sélectionnez « Exporter > Enregistrer sous ».</li>
+                        <li>Choisissez le format (par exemple, GeoTIFF), donnez un nom au fichier et cliquez sur « OK ».</li>
+                    </ul>
+                </li>
+            </ol>
+        </section>
+        <section>
+            <h2>7. Analyse des données découpées</h2>
+            <p>Si nécessaire, vous pouvez analyser le raster découpé en utilisant les outils QGIS :</p>
+            <ul>
+                <li><strong>Statistiques zonales</strong> pour analyser les valeurs dans la zone du shapefile.</li>
+                <li><strong>Calculatrice raster</strong> pour manipuler les valeurs des pixels.</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Conclusion</h2>
+            <p>Vous avez appris à télécharger un fichier GeoTIFF depuis USGS, le charger dans QGIS, et le découper selon un shapefile. Ce processus est utile pour limiter une analyse à une zone spécifique et éviter de traiter des données inutiles.</p>
+        </section>
+        <section>
+            <h2>Matériel à fournir aux étudiants</h2>
+            <ul>
+                <li>Le fichier GeoTIFF.</li>
+                <li>Le shapefile.</li>
+                <li>Une version PDF de ce tutoriel.</li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>Tutoriel créé pour le cours de SIG.</p>
+    </footer>
+</body>
+</html>
+
+
